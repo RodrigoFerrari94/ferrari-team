@@ -1,0 +1,24 @@
+{
+  "name": "ferrari-team",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://rodrigoferrari94.github.io/ferrari-team/"
+  },
+  "keywords": [
+    "portal",
+    "transparencia",
+    "academia",
+    "projeto."
+  ],
+  "author": "Rodrigo Ferrari",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}

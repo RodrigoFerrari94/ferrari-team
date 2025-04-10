@@ -1,12 +1,9 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 @font-face {
   font-family: "boxe";
   src: url(../fontes/LaOriental-Bold.otf);
 }
-
 :root {
   --cor0: #dbc822;
   --cor1: #d78e28;
@@ -14,7 +11,6 @@
   --cor3: #b82625;
   --cor4: #4c2520;
   --cor5: #0e0000;
-
   --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
   --fonte-destaque: "Bebas Neue", "cursive";
   --fonte-boxe: "boxe", cursive;
@@ -26,66 +22,50 @@
 }
 
 body {
+  scroll-behavior: smooth;
   padding-top: 20px;
-  background: black url("imagens/ring2-original.jpg") center bottom no-repeat
-    fixed;
+  background: black url("imagens/ring2-original.jpg") center bottom no-repeat fixed;
   background-size: cover;
-
   font-family: var(--fonte-padrão);
 }
 
-header {
-  background-image: linear-gradient(
-    to top,
-    var(--cor0),
-    var(--cor1),
-    var(--cor2),
-    var(--cor3),
-    var(--cor4)
-  );
-
+.header {
+  background-image: linear-gradient(to top, var(--cor0), var(--cor1), var(--cor2), var(--cor3), var(--cor4));
   min-height: 100px;
   max-width: 1200px;
   margin-top: 20px;
   margin: auto;
-
   text-align: center;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.466);
   padding-top: 10px;
 }
-
-.logo {
+.header__logo {
   background-image: url("imagens/logo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 120%, 120%;
   margin: 0;
   padding: 0;
-
   height: 150px;
   width: 150px;
   display: inline-block;
   vertical-align: middle;
 }
-
-header h1 {
+.header__title {
   color: white;
   font-family: var(--fonte-destaque);
   font-size: 2.3em;
-
   margin: 0px;
   padding-bottom: 20px;
   line-height: 1em;
-
   font-weight: normal;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.589);
-
   max-width: 500px;
   max-height: 200px;
   display: inline-block;
 }
-header p {
+.header__text {
   color: white;
   font-family: var(--fonte-padrão);
   font-size: 1.2em;
@@ -93,20 +73,17 @@ header p {
   padding: 20px;
   padding-top: 0;
   max-width: 600px;
-
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
-
   display: inline-block;
 }
 
-nav {
+.nav {
   background-color: var(--cor0);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.466);
   border-radius: 0px 0px 0px 20px;
   padding: 5px;
   max-width: 1190px;
   margin: auto;
-
   position: relative;
 }
 
@@ -122,7 +99,6 @@ nav a {
   font-weight: bolder;
   font-size: 1.1em;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
-
   padding: 5px 10px 5px 10px;
   text-decoration: none;
   transition-duration: 0.5s;
@@ -137,17 +113,13 @@ main {
   background-color: white;
   padding: 20px;
   border-radius: 20px 20px 20px 20px;
-
   min-width: 320px;
   max-width: 800px;
-
   margin: auto;
   margin-bottom: 30px;
   margin-top: 20px;
-
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
 }
 
@@ -165,7 +137,6 @@ main a:hover {
 
 strong {
   padding: 2px;
-
   background-color: var(--cor1);
 }
 
@@ -189,7 +160,6 @@ main p {
   text-indent: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-
   line-height: 2em;
 }
 
@@ -204,8 +174,9 @@ main div.img {
   margin-left: 0px;
   margin-right: 0px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
-  background-color: #0e000018;
+  background-color: rgba(14, 0, 0, 0.0941176471);
 }
+
 div#imgvertical img {
   max-width: 900px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
@@ -215,9 +186,7 @@ main div.video {
   background-color: var(--cor5);
   margin: 0px -20px 30px -20px;
   padding: 20px;
-
   padding-bottom: 57%;
-
   position: relative;
 }
 
@@ -225,13 +194,12 @@ div.video > iframe {
   position: absolute;
   top: 5%;
   left: 5%;
-
   width: 90%;
   height: 90%;
 }
 
 aside {
-  background-color: #ffc800b0;
+  background-color: rgba(255, 200, 0, 0.6901960784);
   border-radius: 20px 20px 0px 0px;
   box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.425);
   padding: 10px;
@@ -246,9 +214,10 @@ aside h3 {
   border-radius: 20px 20px 0px 0px;
   margin: -10px -10px 0px -10px;
 }
+
 aside ul {
   list-style-position: inside;
-  list-style-type: "\2714\00A0";
+  list-style-type: "✔ ";
 }
 
 #especial {
@@ -256,6 +225,7 @@ aside ul {
   background-color: transparent;
   color: var(--cor2);
 }
+
 #especial:hover {
   text-decoration: underline;
   color: var(--cor3);
@@ -278,3 +248,5 @@ footer {
   color: white;
   text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */
