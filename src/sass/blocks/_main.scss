@@ -1,0 +1,127 @@
+@use "../utils" as utils;
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px 20px 20px 20px;
+  min-width: 260px;
+  max-width: 800px;
+
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+}
+
+main a {
+  text-decoration: none;
+  background-color: utils.$cor1;
+  color: black;
+  padding: 2px;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: utils.$cor0;
+}
+
+strong {
+  padding: 2px;
+  background-color: utils.$cor1;
+}
+
+main h1 {
+  color: utils.$cor4;
+  font-family: utils.$fonte-boxe;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+}
+
+main h2 {
+  color: utils.$cor3;
+  font-family: utils.$fonte-boxe;
+  font-size: 1.2em;
+  text-indent: 4px;
+}
+
+main p {
+  font-family: utils.$fonte-padrao;
+  text-align: justify;
+  text-indent: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  line-height: 2em;
+}
+
+main img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
+
+main div.img {
+  margin-left: 0px;
+  margin-right: 0px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
+  background-color: #0e000018;
+}
+div#imgvertical img {
+  max-width: 900px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
+}
+
+main div.video {
+  background-color: utils.$cor5;
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+
+  padding-bottom: 57%;
+
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  width: 90%;
+  height: 90%;
+}
+
+aside {
+  background-color: #ffc800b0;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.425);
+  padding: 10px;
+}
+
+aside h3 {
+  background-color: utils.$cor2;
+  color: white;
+  font-weight: normal;
+  font-family: utils.$fonte-padrao;
+  text-indent: 20px;
+  border-radius: 20px 20px 0px 0px;
+  margin: -10px -10px 0px -10px;
+}
+aside ul {
+  list-style-position: inside;
+  list-style-type: "\2714\00A0";
+}
+
+#especial {
+  text-decoration: none;
+  background-color: transparent;
+  color: utils.$cor2;
+}
+#especial:hover {
+  text-decoration: underline;
+  color: utils.$cor3;
+}

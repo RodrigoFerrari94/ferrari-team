@@ -1,0 +1,10 @@
+@use "../utils" as utils;
+.body {
+  scroll-behavior: smooth;
+  padding-top: 20px;
+  background: black url("../imagens/image-style/ring2-original.jpg") center
+    bottom no-repeat fixed;
+  background-size: cover;
+
+  font-family: utils.$fonte-padrao;
+}

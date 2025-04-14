@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "boxe";
+  src: url(../fontes/LaOriental-Bold.otf);
+}
+.body {
+  scroll-behavior: smooth;
+  padding-top: 20px;
+  background: black url("../imagens/image-style/ring2-original.jpg") center bottom no-repeat fixed;
+  background-size: cover;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  margin: auto;
+  background-image: linear-gradient(to top, #dbc822, #d78e28, #d14c27, #b82625, #4c2520);
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.466);
+}
+.header__logo {
+  background-image: url("../imagens/image-style/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 180px;
+  width: 180px;
+}
+.header__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  color: white;
+  font-family: "Bebas Neue", "cursive";
+  font-size: 2.3em;
+  line-height: 1em;
+  font-weight: normal;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.589);
+  text-align: center;
+  margin: 0;
+}
+.header__text {
+  color: white;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
+}
+
+.nav {
+  padding: 5px;
+  max-width: 1190px;
+  margin: auto;
+}
+.nav__list {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.nav__item {
+  display: inline;
+  list-style: none;
+}
+.nav__link {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.nav__link:hover {
+  color: #d14c27;
+  background-color: #d78e28;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px 20px 20px 20px;
+  min-width: 260px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+}
+
+main a {
+  text-decoration: none;
+  background-color: #d78e28;
+  color: black;
+  padding: 2px;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #dbc822;
+}
+
+strong {
+  padding: 2px;
+  background-color: #d78e28;
+}
+
+main h1 {
+  color: #4c2520;
+  font-family: "boxe", cursive;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+}
+
+main h2 {
+  color: #b82625;
+  font-family: "boxe", cursive;
+  font-size: 1.2em;
+  text-indent: 4px;
+}
+
+main p {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  text-align: justify;
+  text-indent: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+
+main img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
+
+main div.img {
+  margin-left: 0px;
+  margin-right: 0px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
+  background-color: rgba(14, 0, 0, 0.0941176471);
+}
+
+div#imgvertical img {
+  max-width: 900px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
+}
+
+main div.video {
+  background-color: #0e0000;
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 57%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+aside {
+  background-color: rgba(255, 200, 0, 0.6901960784);
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.425);
+  padding: 10px;
+}
+
+aside h3 {
+  background-color: #d14c27;
+  color: white;
+  font-weight: normal;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  text-indent: 20px;
+  border-radius: 20px 20px 0px 0px;
+  margin: -10px -10px 0px -10px;
+}
+
+aside ul {
+  list-style-position: inside;
+  list-style-type: "✔ ";
+}
+
+#especial {
+  text-decoration: none;
+  background-color: transparent;
+  color: #d14c27;
+}
+
+#especial:hover {
+  text-decoration: underline;
+  color: #b82625;
+}
+
+.portal {
+  padding: 10px;
+  background-color: white;
+}
+
+.portal__title {
+  color: white;
+  background-color: #0e0000;
+  text-align: center;
+  border-radius: 25px;
+}
+
+footer {
+  background-color: #9e0000;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
