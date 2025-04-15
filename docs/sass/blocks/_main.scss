@@ -52,72 +52,42 @@
     padding: 2px;
     background-color: utils.$cor1;
   }
-}
 
-main img {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-  display: block;
-}
+  &__img-content {
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
+    background-color: #0e000018;
+  }
 
-main div.img {
-  margin-left: 0px;
-  margin-right: 0px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
-  background-color: #0e000018;
-}
-div#imgvertical img {
-  max-width: 900px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
-}
+  &__img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+  }
 
-main div.video {
-  background-color: utils.$cor5;
-  margin: 0px -20px 30px -20px;
-  padding: 20px;
+  &__img--vertical {
+    max-width: 900px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
+  }
 
-  padding-bottom: 57%;
+  &__video-content {
+    background-color: utils.$cor5;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
 
-  position: relative;
-}
+    padding-bottom: 57%;
 
-div.video > iframe {
-  position: absolute;
-  top: 5%;
-  left: 5%;
+    position: relative;
+  }
 
-  width: 90%;
-  height: 90%;
-}
+  &__video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
 
-aside {
-  background-color: #ffc800b0;
-  border-radius: 20px 20px 0px 0px;
-  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.425);
-  padding: 10px;
-}
-
-aside h3 {
-  background-color: utils.$cor2;
-  color: white;
-  font-weight: normal;
-  font-family: utils.$fonte-padrao;
-  text-indent: 20px;
-  border-radius: 20px 20px 0px 0px;
-  margin: -10px -10px 0px -10px;
-}
-aside ul {
-  list-style-position: inside;
-  list-style-type: "\2714\00A0";
-}
-
-#especial {
-  text-decoration: none;
-  background-color: transparent;
-  color: utils.$cor2;
-}
-#especial:hover {
-  text-decoration: underline;
-  color: utils.$cor3;
+    width: 90%;
+    height: 90%;
+  }
 }

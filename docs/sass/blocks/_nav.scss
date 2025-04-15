@@ -1,0 +1,38 @@
+@use "../utils" as utils;
+.nav {
+  //position: sticky;
+  //top: 0;
+  //z-index: 999;
+
+  padding: 5px;
+  max-width: 1190px;
+  margin: auto;
+
+  &__list {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline;
+    list-style: none;
+  }
+
+  &__link {
+    color: rgb(255, 255, 255);
+    font-family: utils.$fonte-padrao;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
+
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  &__link:hover {
+    color: utils.$cor2;
+    background-color: utils.$cor1;
+  }
+}
