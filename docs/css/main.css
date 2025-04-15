@@ -84,7 +84,7 @@
   background-color: #d78e28;
 }
 
-main {
+.main {
   background-color: white;
   padding: 20px;
   border-radius: 20px 20px 20px 20px;
@@ -97,46 +97,36 @@ main {
   border-bottom-right-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
 }
-
-main a {
+.main__link {
   text-decoration: none;
   background-color: #d78e28;
   color: black;
   padding: 2px;
 }
-
-main a:hover {
+.main__link:hover {
   text-decoration: underline;
   color: #dbc822;
 }
-
-strong {
-  padding: 2px;
-  background-color: #d78e28;
-}
-
-main h1 {
-  color: #4c2520;
-  font-family: "boxe", cursive;
+.main__title {
   font-size: 1.5em;
   font-weight: normal;
   text-align: center;
 }
-
-main h2 {
-  color: #b82625;
-  font-family: "boxe", cursive;
+.main__sub-title {
   font-size: 1.2em;
   text-indent: 4px;
 }
-
-main p {
+.main__text {
   font-family: Arial, Verdana, Helvetica, sans-serif;
   text-align: justify;
   text-indent: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 2em;
+}
+.main__strong {
+  padding: 2px;
+  background-color: #d78e28;
 }
 
 main img {
@@ -205,6 +195,19 @@ aside ul {
 #especial:hover {
   text-decoration: underline;
   color: #b82625;
+}
+
+.history {
+  padding: 0;
+  margin: 0;
+}
+.history__title {
+  color: #4c2520;
+  font-family: "boxe", cursive;
+}
+.history__sub-title {
+  color: #b82625;
+  font-family: "boxe", cursive;
 }
 
 .portal {

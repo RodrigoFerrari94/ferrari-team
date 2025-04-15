@@ -1,0 +1,15 @@
+@use "../utils" as utils;
+.history {
+  padding: 0;
+  margin: 0;
+
+  &__title {
+    color: utils.$cor4;
+    font-family: utils.$fonte-boxe;
+  }
+
+  &__sub-title {
+    color: utils.$cor3;
+    font-family: utils.$fonte-boxe;
+  }
+}

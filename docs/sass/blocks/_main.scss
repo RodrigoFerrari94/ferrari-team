@@ -1,5 +1,5 @@
 @use "../utils" as utils;
-main {
+.main {
   background-color: white;
   padding: 20px;
   border-radius: 20px 20px 20px 20px;
@@ -14,48 +14,44 @@ main {
   border-bottom-right-radius: 10px;
 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
-}
 
-main a {
-  text-decoration: none;
-  background-color: utils.$cor1;
-  color: black;
-  padding: 2px;
-}
+  &__link {
+    text-decoration: none;
+    background-color: utils.$cor1;
+    color: black;
+    padding: 2px;
 
-main a:hover {
-  text-decoration: underline;
-  color: utils.$cor0;
-}
+    &:hover {
+      text-decoration: underline;
+      color: utils.$cor0;
+    }
+  }
 
-strong {
-  padding: 2px;
-  background-color: utils.$cor1;
-}
+  &__title {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+  }
 
-main h1 {
-  color: utils.$cor4;
-  font-family: utils.$fonte-boxe;
-  font-size: 1.5em;
-  font-weight: normal;
-  text-align: center;
-}
+  &__sub-title {
+    font-size: 1.2em;
+    text-indent: 4px;
+  }
 
-main h2 {
-  color: utils.$cor3;
-  font-family: utils.$fonte-boxe;
-  font-size: 1.2em;
-  text-indent: 4px;
-}
+  &__text {
+    font-family: utils.$fonte-padrao;
+    text-align: justify;
+    text-indent: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
-main p {
-  font-family: utils.$fonte-padrao;
-  text-align: justify;
-  text-indent: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    line-height: 2em;
+  }
 
-  line-height: 2em;
+  &__strong {
+    padding: 2px;
+    background-color: utils.$cor1;
+  }
 }
 
 main img {
