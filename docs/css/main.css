@@ -128,73 +128,35 @@
   padding: 2px;
   background-color: #d78e28;
 }
-
-main img {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-  display: block;
-}
-
-main div.img {
+.main__img-content {
   margin-left: 0px;
   margin-right: 0px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
   background-color: rgba(14, 0, 0, 0.0941176471);
 }
-
-div#imgvertical img {
+.main__img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
+.main__img--vertical {
   max-width: 900px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
 }
-
-main div.video {
+.main__video-content {
   background-color: #0e0000;
   margin: 0px -20px 30px -20px;
   padding: 20px;
   padding-bottom: 57%;
   position: relative;
 }
-
-div.video > iframe {
+.main__video {
   position: absolute;
   top: 5%;
   left: 5%;
   width: 90%;
   height: 90%;
-}
-
-aside {
-  background-color: rgba(255, 200, 0, 0.6901960784);
-  border-radius: 20px 20px 0px 0px;
-  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.425);
-  padding: 10px;
-}
-
-aside h3 {
-  background-color: #d14c27;
-  color: white;
-  font-weight: normal;
-  font-family: Arial, Verdana, Helvetica, sans-serif;
-  text-indent: 20px;
-  border-radius: 20px 20px 0px 0px;
-  margin: -10px -10px 0px -10px;
-}
-
-aside ul {
-  list-style-position: inside;
-  list-style-type: "✔ ";
-}
-
-#especial {
-  text-decoration: none;
-  background-color: transparent;
-  color: #d14c27;
-}
-
-#especial:hover {
-  text-decoration: underline;
-  color: #b82625;
 }
 
 .history {
@@ -208,6 +170,26 @@ aside ul {
 .history__sub-title {
   color: #b82625;
   font-family: "boxe", cursive;
+}
+
+.aside {
+  background-color: rgba(255, 200, 0, 0.6901960784);
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.425);
+  padding: 10px;
+}
+.aside__title {
+  background-color: #d14c27;
+  color: white;
+  font-weight: normal;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  text-indent: 20px;
+  border-radius: 20px 20px 0px 0px;
+  margin: -10px -10px 0px -10px;
+}
+.aside__list {
+  list-style-position: inside;
+  list-style-type: "✔ ";
 }
 
 .portal {
