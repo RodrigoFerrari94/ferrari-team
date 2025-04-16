@@ -2,12 +2,12 @@
 .cash-flow {
   width: 100%;
   overflow: auto;
-  border-collapse: collapse;
-  margin-bottom: 20px;
 
-  &-container {
+  &__table {
     width: 100%;
     overflow: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
   }
 
   &__column {

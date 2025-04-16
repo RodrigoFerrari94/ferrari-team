@@ -206,12 +206,12 @@
 .cash-flow {
   width: 100%;
   overflow: auto;
-  border-collapse: collapse;
-  margin-bottom: 20px;
 }
-.cash-flow-container {
+.cash-flow__table {
   width: 100%;
   overflow: auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 .cash-flow__column {
   border: 1px solid #ddd;
