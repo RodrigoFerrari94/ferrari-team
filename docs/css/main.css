@@ -210,4 +210,21 @@ footer {
   text-align: center;
 }
 
+.cash-flow {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.cash-flow__column {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.cash-flow__column--head {
+  background-color: #f2f2f2;
+}
+.cash-flow__saldo {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
