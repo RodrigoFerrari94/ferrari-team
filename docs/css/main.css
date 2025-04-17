@@ -19,7 +19,7 @@
   align-items: center;
   max-width: 1600px;
   margin: auto;
-  background-image: linear-gradient(to top, #dbc822, #d78e28, #d14c27, #b82625, #4c2520);
+  background-image: linear-gradient(to right, #0d0b0d, #db9d28, #0d0b0d);
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.466);
 }
@@ -39,7 +39,7 @@
 }
 .header__title {
   color: white;
-  font-family: "Bebas Neue", "cursive";
+  font-family: "boxe", cursive;
   font-size: 2.3em;
   line-height: 1em;
   font-weight: normal;
@@ -80,8 +80,8 @@
   transition-duration: 0.5s;
 }
 .nav__link:hover {
-  color: #d14c27;
-  background-color: #d78e28;
+  color: #a54c13;
+  background-color: #db9d28;
 }
 
 .main {
@@ -99,13 +99,13 @@
 }
 .main__link {
   text-decoration: none;
-  background-color: #d78e28;
+  background-color: #db9d28;
   color: black;
   padding: 2px;
 }
 .main__link:hover {
   text-decoration: underline;
-  color: #dbc822;
+  color: #f2f4f5;
 }
 .main__title {
   font-size: 1.5em;
@@ -113,8 +113,9 @@
   text-align: center;
 }
 .main__sub-title {
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-indent: 4px;
+  text-align: center;
 }
 .main__text {
   font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -126,7 +127,7 @@
 }
 .main__strong {
   padding: 2px;
-  background-color: #d78e28;
+  background-color: #db9d28;
 }
 .main__img-content {
   margin-left: 0px;
@@ -145,7 +146,7 @@
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.418);
 }
 .main__video-content {
-  background-color: #0e0000;
+  background-color: #0d0b0d;
   margin: 0px -20px 30px -20px;
   padding: 20px;
   padding-bottom: 57%;
@@ -164,12 +165,12 @@
   margin: 0;
 }
 .history__title {
-  color: #4c2520;
+  color: #8b2c13;
   font-family: "boxe", cursive;
 }
 .history__sub-title {
-  color: #b82625;
-  font-family: "boxe", cursive;
+  color: #8b2c13;
+  font-family: "Bebas Neue", "cursive";
 }
 
 .aside {
@@ -179,7 +180,7 @@
   padding: 10px;
 }
 .aside__title {
-  background-color: #d14c27;
+  background-color: #a54c13;
   color: white;
   font-weight: normal;
   font-family: Arial, Verdana, Helvetica, sans-serif;

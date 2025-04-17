@@ -34,8 +34,9 @@
   }
 
   &__sub-title {
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-indent: 4px;
+    text-align: center;
   }
 
   &__text {
@@ -73,7 +74,7 @@
   }
 
   &__video-content {
-    background-color: utils.$cor5;
+    background-color: utils.$cor4;
     margin: 0px -20px 30px -20px;
     padding: 20px;
 
