@@ -1,8 +1,12 @@
 @use "../utils" as utils;
 .dropdown {
-  height: 24px;
-  width: 24px;
+  height: 35px;
+  width: 35px;
   position: relative;
+
+  @include utils.on-tablet {
+    display: none;
+  }
 
   &__trigger {
     cursor: pointer;
