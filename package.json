@@ -2,9 +2,9 @@
   "name": "ferrari-team",
   "version": "1.0.0",
   "description": "blog",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel docs/index.html",
+    "build": "parcel build docs/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "author": "Rodrigo Ferrari",
   "license": "MIT",
   "devDependencies": {
+    "parcel": "^2.14.4",
     "sass": "^1.86.3"
   }
 }

@@ -1,38 +1,62 @@
 @use "../utils" as utils;
 .nav {
+  display: flex;
+  justify-content: space-between;
   //position: sticky;
   //top: 0;
   //z-index: 999;
-
   padding: 5px;
   max-width: 1190px;
-  margin: auto;
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__menu {
+    display: none;
+  }
 
   &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     padding: 0;
-    margin: 0;
+    margin: 0;*/
   }
 
   &__item {
-    display: inline;
     list-style: none;
+    margin-left: 5px;
   }
 
   &__link {
     color: rgb(255, 255, 255);
     font-family: utils.$fonte-padrao;
-    font-weight: bolder;
+
     font-size: 1.1em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
 
-    padding: 5px 10px 5px 10px;
+    padding: 10px;
     text-decoration: none;
     transition-duration: 0.5s;
   }
 
   &__link:hover {
-    color: utils.$cor2;
-    background-color: utils.$cor1;
+    color: utils.$cor3;
   }
 }
