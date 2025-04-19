@@ -18,7 +18,7 @@
   align-items: center;
   gap: 15px;
   max-width: 600px;
-  padding: 20px 40px 0 40px;
+  padding: 20px 40px 20px 40px;
   margin: auto;
   background-image: linear-gradient(to right, #0d0b0d 3%, #db9d28 50%, #0d0b0d 97%);
   border-radius: 0px 0px 20px 20px;
@@ -29,14 +29,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0;
     gap: 0;
   }
-}
-.header__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .header__title {
   margin: 0;
@@ -55,13 +50,6 @@
     max-width: 100%;
     font-size: 3em;
   }
-}
-.header__text {
-  color: white;
-  font-family: Arial, Verdana, Helvetica, sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
 }
 
 .nav {
