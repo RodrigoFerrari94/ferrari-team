@@ -267,6 +267,48 @@
   height: 90%;
 }
 
+.home {
+  background-color: #0d0b0d;
+  box-shadow: none;
+}
+.home__about-project {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (min-width: 600px) {
+  .home__about-project {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.home__text {
+  color: #f2f4f5;
+  max-width: 400px;
+  text-align: center;
+  text-indent: 0;
+  line-height: 1.2em;
+  font-size: 24px;
+}
+.home__carrossel-contain {
+  height: 300px;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.home__carrossel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home__carrossel {
+  max-width: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 .history {
   padding: 0;
   margin: 0;

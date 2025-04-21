@@ -1,0 +1,47 @@
+@use "../utils" as utils;
+.home {
+  background-color: utils.$cor4;
+  box-shadow: none;
+
+  &__about-project {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    @include utils.on-tablet {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+
+  &__text {
+    color: utils.$cor0;
+    max-width: 400px;
+    text-align: center;
+    text-indent: 0;
+    line-height: 1.2em;
+    font-size: 24px;
+  }
+
+  &__carrossel-contain {
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  &__carrossel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__carrossel {
+    max-width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+}
