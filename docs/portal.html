@@ -36,9 +36,7 @@
             <div class="dropdown__content">
               <ul class="nav__list dropdown__list">
                 <li class="nav__item">
-                  <a href="index.html" class="nav__link "
-                    >Home</a
-                  >
+                  <a href="index.html" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
                   <a href="#" class="nav__link">Doar</a>
@@ -49,7 +47,9 @@
                 </li>
 
                 <li class="nav__item">
-                  <a href="portal.html" class="nav__link nav__link--is-active">Portal</a>
+                  <a href="portal.html" class="nav__link nav__link--is-active"
+                    >Portal</a
+                  >
                 </li>
                 <li class="nav__item">
                   <a href="about-us.html" class="nav__link">Sobre Nós</a>
@@ -64,9 +64,7 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link "
-                >Home</a
-              >
+              <a href="index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Doar</a>
@@ -77,7 +75,9 @@
             </li>
 
             <li class="nav__item">
-              <a href="portal.html" class="nav__link nav__link--is-active">Portal</a>
+              <a href="portal.html" class="nav__link nav__link--is-active"
+                >Portal</a
+              >
             </li>
             <li class="nav__item">
               <a href="about-us.html" class="nav__link">Sobre Nós</a>
@@ -94,6 +94,8 @@
       <h2>Demonstrativo do Fluxo de Caixa</h2>
 
       <div class="cash-flow">
+        <div class="cash-flow__mes">Abril</div>
+        <div class="cash-flow__mes">Maio</div>
         <table class="cash-flow__table">
           <thead class="cash-flow__head">
             <tr class="cash-flow__line">
@@ -346,7 +348,7 @@
               <td class="cash-flow__column">R$100,00</td>
               <td class="cash-flow__column"></td>
               <td class="cash-flow__column"></td>
-              <td class="cash-flow__column">Doação Juliano </td>
+              <td class="cash-flow__column">Doação Juliano</td>
             </tr>
             <tr>
               <td class="cash-flow__column">Equipamento</td>
@@ -428,7 +430,7 @@
               <td class="cash-flow__column"></td>
               <td class="cash-flow__column">Doação Joceano</td>
             </tr>
-             <tr>
+            <tr>
               <td class="cash-flow__column">Apoiador</td>
               <td class="cash-flow__column">29/04/2025</td>
               <td class="cash-flow__column">R$15,00</td>
@@ -446,11 +448,76 @@
             </tr>
           </tbody>
         </table>
-      </div>
 
+        <table class="cash-flow__table">
+          <thead class="cash-flow__head">
+            <tr class="cash-flow__line">
+              <th class="cash-flow__column cash-flow__column--head">
+                Descrição da Movimentação
+              </th>
+              <th class="cash-flow__column cash-flow__column--head">Data</th>
+              <th class="cash-flow__column cash-flow__column--head">
+                Entrada (R$)
+              </th>
+              <th class="cash-flow__column cash-flow__column--head">
+                Saída (R$)
+              </th>
+              <th class="cash-flow__column cash-flow__column--head">
+                Saldo (R$)
+              </th>
+              <th class="cash-flow__column cash-flow__column--head">
+                Observações
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cash-flow__column">Abertura de Mês</td>
+              <td class="cash-flow__column">01/05/2025</td>
+              <td class="cash-flow__column"></td>
+              <td class="cash-flow__column">R$1565,93</td>
+              <td class="cash-flow__column"></td>
+              <td class="cash-flow__column">Fechamento do mês passado</td>
+            </tr>
+            <tr>
+              <td class="cash-flow__column">Equipamentos</td>
+              <td class="cash-flow__column">02/05/2025</td>
+              <td class="cash-flow__column">R$25,00</td>
+              <td class="cash-flow__column"></td>
+              <td class="cash-flow__column"></td>
+              <td class="cash-flow__column">Celso venda (bucal)</td>
+            </tr>
+
+            <tr class="cash-flow__saldo">
+              <td class="cash-flow__column">Saldo</td>
+              <td class="cash-flow__column"></td>
+              <td class="cash-flow__column">R$25,00</td>
+              <td class="cash-flow__column">R$1565,93</td>
+              <td class="cash-flow__column" style="color: red">R$-1540,93</td>
+              <td class="cash-flow__column"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
     <footer class="footer">
       <p>Site criado por Rodrigo Ferrari</p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const meses = document.querySelectorAll(".cash-flow__mes");
+        const tabelas = document.querySelectorAll(".cash-flow__table");
+
+        meses.forEach((mes, index) => {
+          mes.addEventListener("click", function () {
+            tabelas.forEach((tabela) => {
+              tabela.classList.remove("cash-flow__table--active");
+            });
+            tabelas[index].classList.add("cash-flow__table--active");
+          });
+        });
+      });
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>
