@@ -1,0 +1,24 @@
+@use "../utils" as utils;
+
+.slick-list {
+  border-radius: 30px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.slick-prev {
+  left: -9%;
+  transform: scale(1.5);
+
+  &:hover {
+    transform: scale(2);
+  }
+}
+
+.slick-next {
+  right: -9%;
+  transform: scale(1.5);
+
+  &:hover {
+    transform: scale(2);
+  }
+}

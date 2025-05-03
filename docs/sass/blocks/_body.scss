@@ -2,6 +2,24 @@
 .body {
   margin: 0;
   scroll-behavior: smooth;
-  background-color: utils.$cor4;
-  font-family: utils.$fonte-padrao;
+  background-color: black;
+
+  &--image {
+    background-image: url(../imagens/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    font-family: utils.$fonte-padrao;
+
+    @include utils.on-tablet {
+      background-size: 70%;
+      background-position-x: 95%;
+    }
+
+    @include utils.on-small-desktop {
+      background-size: 50%;
+      background-position: right;
+      background-position-y: 70%;
+    }
+  }
 }
