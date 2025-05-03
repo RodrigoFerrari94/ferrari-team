@@ -19,3 +19,17 @@ document.addEventListener("click", (event) => {
     dropdown.classList.remove("dropdown--active");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const meses = document.querySelectorAll(".cash-flow__mes");
+  const tabelas = document.querySelectorAll(".cash-flow__table");
+
+  meses.forEach((mes, index) => {
+    mes.addEventListener("click", function () {
+      tabelas.forEach((tabela) => {
+        tabela.classList.remove("cash-flow__table--active");
+      });
+      tabelas[index].classList.add("cash-flow__table--active");
+    });
+  });
+});

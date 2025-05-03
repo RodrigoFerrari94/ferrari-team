@@ -503,21 +503,6 @@
     <footer class="footer">
       <p>Site criado por Rodrigo Ferrari</p>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const meses = document.querySelectorAll(".cash-flow__mes");
-        const tabelas = document.querySelectorAll(".cash-flow__table");
-
-        meses.forEach((mes, index) => {
-          mes.addEventListener("click", function () {
-            tabelas.forEach((tabela) => {
-              tabela.classList.remove("cash-flow__table--active");
-            });
-            tabelas[index].classList.add("cash-flow__table--active");
-          });
-        });
-      });
-    </script>
     <script src="./main.js"></script>
   </body>
 </html>
