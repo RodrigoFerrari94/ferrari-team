@@ -146,10 +146,12 @@
           futuro mais saudável e promissor para a juventude!
         </p>
       </section>
-      <section class="home__cash-flow">
+      <section>
         <a class="home__link" href="portal.html">
-          <h1 class="main__title home__title">Saldo Atual</h1>
-          <div class="home__cash">R$-1540,93</div>
+          <div class="home__cash-flow">
+            <h1 class="main__title home__title">Saldo Atual</h1>
+            <div class="home__cash">R$-1540,93</div>
+          </div>
         </a>
       </section>
     </main>
@@ -157,8 +159,9 @@
     <footer class="footer">
       <div class="footer__contact" id="contact-us">
         <form
-          class="send-us-a-message"
-          onsubmit="this.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+          action="mailto:rodrigoferrari94rf@gmail.com?subject=Nova Mensagem do Site&body="
+          method="post"
+          onsubmit="window.location.href = this.action + encodeURIComponent(this.querySelector('#mensagem').value) + '%0A%0A' + encodeURIComponent('Nome: ' + this.querySelector('#nome').value) + '%0A' + encodeURIComponent('Email: ' + this.querySelector('#email').value); this.reset(); return false;"
         >
           <h2 class="footer__title send-us-a-message__title">
             Envie-nos uma mensagem
