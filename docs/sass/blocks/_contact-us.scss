@@ -31,18 +31,16 @@
   }
 
   &__link {
-    & {
-      margin-top: 8px;
-      font-family: utils.$fonte-padrao;
-      font-size: 24px;
-      font-weight: 600;
-      font-style: normal;
-      height: 36px;
-      line-height: 150%;
-      text-align: left;
-      text-decoration: none;
-      color: #fff;
-    }
+    margin-top: 8px;
+    font-family: utils.$fonte-padrao;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    height: 36px;
+    line-height: 150%;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
 
     @include utils.hover(color, utils.$cor2);
   }
