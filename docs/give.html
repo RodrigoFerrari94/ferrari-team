@@ -106,7 +106,9 @@
       <div class="footer__contact" id="contact-us">
         <form
           class="send-us-a-message"
-          onsubmit="this.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+          action="mailto:rodrigoferrari94rf@gmail.com?subject=Informações&body="
+          method="post"
+          onsubmit="window.location.href = this.action + encodeURIComponent(this.querySelector('#mensagem').value) + '%0A%0A' + encodeURIComponent('Nome: ' + this.querySelector('#nome').value) + '%0A' + encodeURIComponent('Email: ' + this.querySelector('#email').value); this.reset(); return false;"
         >
           <h2 class="footer__title send-us-a-message__title">
             Envie-nos uma mensagem

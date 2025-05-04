@@ -159,7 +159,8 @@
     <footer class="footer">
       <div class="footer__contact" id="contact-us">
         <form
-          action="mailto:rodrigoferrari94rf@gmail.com?subject=Nova Mensagem do Site&body="
+          class="send-us-a-message"
+          action="mailto:rodrigoferrari94rf@gmail.com?subject=Informações&body="
           method="post"
           onsubmit="window.location.href = this.action + encodeURIComponent(this.querySelector('#mensagem').value) + '%0A%0A' + encodeURIComponent('Nome: ' + this.querySelector('#nome').value) + '%0A' + encodeURIComponent('Email: ' + this.querySelector('#email').value); this.reset(); return false;"
         >
