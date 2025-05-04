@@ -638,6 +638,9 @@
   text-transform: uppercase;
 }
 .contact-us__link {
+  transition: color 0.3s;
+}
+.contact-us__link {
   margin-top: 8px;
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 24px;
@@ -648,6 +651,9 @@
   text-align: left;
   text-decoration: none;
   color: #fff;
+}
+.contact-us__link:hover {
+  color: #a54c13;
 }
 .contact-us__social-link-content {
   display: flex;
