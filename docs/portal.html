@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Academia Ferrari Team</title>
+    <title>Engenharia da Luta</title>
     <link
       rel="shortcut icon"
       href="./imagens/favicon.ico"
@@ -19,6 +19,8 @@
         <div class="nav__icons">
           <a
             href="https://www.instagram.com/academiaferrariteam/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="nav__link"
             ><img
               src="./imagens/icons/logo.png"
@@ -39,11 +41,11 @@
                   <a href="index.html" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Doar</a>
+                  <a href="give.html" class="nav__link">Doar</a>
                 </li>
 
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Loja</a>
+                  <a href="story.html" class="nav__link">Loja</a>
                 </li>
 
                 <li class="nav__item">
@@ -55,7 +57,7 @@
                   <a href="about-us.html" class="nav__link">Sobre Nós</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Contatos</a>
+                  <a href="#contact-us" class="nav__link">Contatos</a>
                 </li>
               </ul>
             </div>
@@ -67,11 +69,11 @@
               <a href="index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Doar</a>
+              <a href="give.html" class="nav__link">Doar</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">Loja</a>
+              <a href="story.html" class="nav__link">Loja</a>
             </li>
 
             <li class="nav__item">
@@ -83,7 +85,7 @@
               <a href="about-us.html" class="nav__link">Sobre Nós</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contatos</a>
+              <a href="#contact-us" class="nav__link">Contatos</a>
             </li>
           </ul>
         </div>
@@ -95,7 +97,7 @@
 
       <div class="cash-flow">
         <div class="cash-flow__mes">Abril</div>
-        <div class="cash-flow__mes">Maio</div>
+        <div class="cash-flow__mes">Atual</div>
         <table class="cash-flow__table">
           <thead class="cash-flow__head">
             <tr class="cash-flow__line">
@@ -449,7 +451,7 @@
           </tbody>
         </table>
 
-        <table class="cash-flow__table">
+        <table class="cash-flow__table cash-flow__table--active">
           <thead class="cash-flow__head">
             <tr class="cash-flow__line">
               <th class="cash-flow__column cash-flow__column--head">
@@ -501,7 +503,134 @@
       </div>
     </section>
     <footer class="footer">
-      <p>Site criado por Rodrigo Ferrari</p>
+      <div class="footer__contact" id="contact-us">
+        <form
+          class="send-us-a-message"
+          onsubmit="this.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+        >
+          <h2 class="footer__title send-us-a-message__title">
+            Envie-nos uma mensagem
+          </h2>
+
+          <div class="send-us-a-message__inputs">
+            <input
+              class="send-us-a-message__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu e-mail"
+              required
+            />
+
+            <input
+              class="send-us-a-message__input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              required
+            />
+
+            <textarea
+              class="send-us-a-message__input send-us-a-message__input--text-area"
+              id="mensagem"
+              name="mensagem"
+              placeholder="Envie uma mensagem"
+              rows="1"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="send-us-a-message__button">
+            Enviar
+          </button>
+        </form>
+        <div class="contact-us">
+          <h2 class="footer__title contact-us__title">Contate-nos</h2>
+
+          <address class="contact-us__address">
+            <div class="contact-us__field">
+              <p class="contact-us__label">Ligação</p>
+              <a class="contact-us__link" href="tel:+5551981864600">
+                (51)981865600
+              </a>
+            </div>
+
+            <div class="contact-us__field">
+              <p class="contact-us__label">Endereço</p>
+              <a
+                class="contact-us__link"
+                href="https://maps.app.goo.gl/VXXPgzqpRRMsBVSW8"
+                target="_blank"
+              >
+                AV.Cel.Theodomiro Porto da Fonseca 1949
+              </a>
+            </div>
+            <div class="contact-us__field">
+              <p class="contact-us__label">Redes Sociais</p>
+              <div class="contact-us__social-link-content">
+                <a
+                  class="contact-us__link"
+                  href="https://www.facebook.com/FerrariTeamBoxe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="contact-us__facebook">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./imagens/icons-social-media/facebook.svg"
+                      alt="facebook link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./imagens/icons-social-media/facebook-blue.svg"
+                      alt="facebook link"
+                    />
+                  </div>
+                </a>
+                <a
+                  class="contact-us__link"
+                  href="https://www.instagram.com/academiaferrariteam/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="contact-us__instagram">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./imagens/icons-social-media/instagram.svg"
+                      alt="instagram link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./imagens/icons-social-media/ig-instagram-icon.svg"
+                      alt="instagram link"
+                    />
+                  </div>
+                </a>
+                <a
+                  class="contact-us__link"
+                  href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FS56JJMHKW7I2J1&e=AT2Rd4Wx3KLkdzZnIu9GsfnGAFv44HoXRNycfeeNWsbgY_TDRLo7F5m8RCsciFpNFekdLVUEhF2IVC1i2FtQvDVuW7Cxp_-f1GQVLarOmtHJkxE-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="contact-us__instagram">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./imagens/icons-social-media/whatsapp-white-icon.svg"
+                      alt="whatsapp link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./imagens/icons-social-media/wa-whatsapp-icon.svg"
+                      alt="whatsapp link"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
     </footer>
     <script src="./main.js"></script>
   </body>
