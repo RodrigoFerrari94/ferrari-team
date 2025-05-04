@@ -147,7 +147,119 @@
     </main>
 
     <footer class="footer">
-      <p>Site criado por Rodrigo Ferrari</p>
+      <div class="footer__contact" id="contact-us">
+        <form
+          class="send-us-a-message"
+          onsubmit="this.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+        >
+          <h2 class="footer__title send-us-a-message__title">
+            Send us a message
+          </h2>
+
+          <div class="send-us-a-message__inputs">
+            <input
+              class="send-us-a-message__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your e-mail"
+              required
+            />
+
+            <input
+              class="send-us-a-message__input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              required
+            />
+
+            <textarea
+              class="send-us-a-message__input send-us-a-message__input--text-area"
+              id="mensagem"
+              name="mensagem"
+              placeholder="Envie uma mensagem"
+              rows="1"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="send-us-a-message__button">
+            Enviar
+          </button>
+        </form>
+        <div class="contact-us">
+          <h2 class="footer__title contact-us__title">Contate-nos</h2>
+
+          <address class="contact-us__address">
+            <div class="contact-us__field">
+              <p class="contact-us__label">Ligação</p>
+              <a class="contact-us__link" href="tel:+5551981864600">
+                (51)981865600
+              </a>
+            </div>
+
+            <div class="contact-us__field">
+              <p class="contact-us__label">Endereço</p>
+              <a
+                class="contact-us__link"
+                href="https://maps.app.goo.gl/VXXPgzqpRRMsBVSW8"
+                target="_blank"
+              >
+                AV.Cel.Theodomiro Porto da Fonseca 1949
+              </a>
+            </div>
+            <div class="contact-us__field">
+              <p class="contact-us__label">Redes Sociais</p>
+              <div class="contact-us__social-link-content">
+                <a class="contact-us__link" href="#">
+                  <div class="contact-us__facebook">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./imagens/icons-social-media/facebook.svg"
+                      alt="facebook link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./imagens/icons-social-media/facebook-blue.svg"
+                      alt="facebook link"
+                    />
+                  </div>
+                </a>
+                <a class="contact-us__link" href="#">
+                  <div class="contact-us__instagram">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./imagens/icons-social-media/instagram.svg"
+                      alt="instagram link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./imagens/icons-social-media/ig-instagram-icon.svg"
+                      alt="instagram link"
+                    />
+                  </div>
+                </a>
+                <a class="contact-us__link" href="#">
+                  <div class="contact-us__instagram">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./imagens/icons-social-media/whatsapp-white-icon.svg"
+                      alt="instagram link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./imagens/icons-social-media/wa-whatsapp-icon.svg"
+                      alt="instagram link"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
     </footer>
     <script src="./main.js"></script>
     <script
