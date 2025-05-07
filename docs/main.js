@@ -33,3 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const cash = "R$-3815,93";
+
+const cashToModific = document.querySelectorAll(".cash");
+
+// Itera sobre a lista de elementos encontrados
+cashToModific.forEach((element) => {
+  // Define o textContent de cada elemento com o valor da variável global
+  element.textContent = cash;
+});
