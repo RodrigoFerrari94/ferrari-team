@@ -1,7 +1,9 @@
 @use "../utils/screen-mixins" as screens;
 @use "../utils/variables" as vars;
 @mixin hover($_property, $_toValue) {
-  transition: #{$_property} vars.$transition-page;
+  & {
+    transition: #{$_property} vars.$transition-page;
+  }
   &:hover {
     #{$_property}: $_toValue;
   }
