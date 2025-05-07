@@ -1,0 +1,79 @@
+@use "../utils" as utils;
+.give-card {
+  width: 200px;
+  height: 220px;
+  background-color: rgba(1, 75, 174, 255);
+  border-radius: 20px;
+  padding: 20px;
+
+  @include utils.on-tablet {
+    width: 150px;
+  }
+
+  &__title {
+    font-family: utils.$fonte-padrao;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-block: 0;
+    padding-bottom: 10px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    line-height: 100%;
+    border-radius: 3px;
+    max-width: 100px;
+    margin-bottom: 20px;
+
+    &--transform {
+      font-size: 36px;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  &__description {
+    position: relative;
+    background-color: white;
+    max-width: 180px;
+    border-radius: 5px;
+    margin: auto;
+  }
+
+  &__legend {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    padding: 2px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    width: 100px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  &__list {
+    margin-block: 0;
+    padding-block: 10px;
+    padding-inline-start: 20px;
+  }
+
+  &__item {
+    font-size: 9px;
+    list-style-type: "⚫";
+    margin-top: 5px;
+  }
+}
