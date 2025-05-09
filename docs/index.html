@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Engenharia da Luta</title>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <link
       rel="shortcut icon"
       href="./imagens/favicon.ico"
@@ -64,7 +76,7 @@
                   <a href="portal.html" class="nav__link">Portal</a>
                 </li>
                 <li class="nav__item">
-                  <a href="about-us.html" class="nav__link">Sobre Nós</a>
+                  <a href="history.html" class="nav__link">História</a>
                 </li>
                 <li class="nav__item">
                   <a href="#contact-us" class="nav__link">Contatos</a>
@@ -92,7 +104,7 @@
               <a href="portal.html" class="nav__link">Portal</a>
             </li>
             <li class="nav__item">
-              <a href="about-us.html" class="nav__link">Sobre Nós</a>
+              <a href="history.html" class="nav__link">História</a>
             </li>
             <li class="nav__item">
               <a href="#contact-us" class="nav__link">Contatos</a>
@@ -141,18 +153,89 @@
             />
           </div>
         </div>
+        <div class="main__text-content main__content-text-button">
+          <p class="main__text home__text-top">
+            Conheça nossos projetos, apoie nossa causa e ajude a construir um
+            futuro mais saudável e promissor para a juventude!
+          </p>
+          <button class="main__button home__button" type="button">
+            <a class="main__link" href="give.html">Saiba como Apoiar</a>
+          </button>
+        </div>
+      </section>
+      <section class="home__portal">
+        <h3 class="main__sub-title home__sub-title">Portal da Transparência</h3>
+        <p class="main__text home__text home__text-left">
+          Confira de perto nosso Portal da Transparência
+        </p>
+        <p class="main__text home__cash cash cash-manual"></p>
+        <a href="portal.html" class="main__arrow-button">
+          <span class="main__content-arrow">
+            <img
+              src="./imagens/icons/vector-white.svg"
+              alt="arrow link"
+              class="main__arrow"
+            />
+          </span>
+          Saiba mais
+        </a>
+      </section>
+      <section class="home__about-us">
+        <h2 class="main__title">Quem somos?</h2>
+        <div class="main__text-content-button">
+          <p class="main__text home__text">
+            Um grupo de amigos, amantes das lutas que tiveram suas vidas guiadas
+            através do esporte e das artes marciais.
+          </p>
+          <a href="#" class="main__arrow-button">
+            <span class="main__content-arrow">
+              <img
+                src="./imagens/icons/vector-white.svg"
+                alt="arrow link"
+                class="main__arrow"
+              />
+            </span>
+            Saiba mais
+          </a>
+        </div>
+        <h2 class="main__title home__title">Propósito</h2>
         <p class="main__text home__text">
-          Conheça nossos projetos, apoie nossa causa e ajude a construir um
-          futuro mais saudável e promissor para a juventude!
+          Temos como objetivo impactar a vidas das crianças e adolescentes da
+          nossa comunidade. Através do esporte desenvolver caráter, disciplina,
+          resiliência e proporcionar um ambiente acolhedor e de amizade, mudando
+          assim a vida de muitos.
         </p>
       </section>
-      <section>
-        <a class="home__link" href="portal.html">
-          <div class="home__cash-flow">
-            <h1 class="main__title home__title">Saldo Atual</h1>
-            <p class="cash cash-manual"></p>
+      <section class="home__registration">
+        <div class="home__registration-center">
+          <h2 class="main__title">Incrições</h2>
+          <p class="main__text home__text">
+            Confira as atividades e faça sua pré-inscrição
+          </p>
+        </div>
+        <div class="home__registration-left">
+          <h3 class="main__sub-title home__sub-title">Engenharia Do Boxe</h3>
+          <div class="main__text-content-button">
+            <ul class="home__list">
+              <li class="home__item">
+                Oficina de Boxe destinada a competição.
+              </li>
+              <li class="home__item">
+                Faça parte de uma equipe esportiva de alta performance.
+              </li>
+              <li class="home__item">
+                Treinos físicos e técnicos do iniciante ao avançado.
+              </li>
+              <li class="home__item">
+                Se desafie e participe de competições oficiais.
+              </li>
+              <li class="home__item">Faixa etária dos 14 aos 18 anos.</li>
+            </ul>
+            <button class="main__button home__button" type="button">
+              <a class="main__link" href="give.html">Inscreva-se</a>
+            </button>
           </div>
-        </a>
+        </div>
       </section>
     </main>
 
@@ -289,18 +372,7 @@
       </div>
     </footer>
     <script src="./main.js"></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+
     <script type="text/javascript">
       $(document).ready(function () {
         $(".caroussel").slick({

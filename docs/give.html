@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Engenharia da Luta</title>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <link
       rel="shortcut icon"
       href="./imagens/favicon.ico"
@@ -64,7 +76,7 @@
                   <a href="portal.html" class="nav__link">Portal</a>
                 </li>
                 <li class="nav__item">
-                  <a href="about-us.html" class="nav__link">Sobre Nós</a>
+                  <a href="history.html" class="nav__link">História</a>
                 </li>
                 <li class="nav__item">
                   <a href="#contact-us" class="nav__link">Contatos</a>
@@ -92,7 +104,7 @@
               <a href="portal.html" class="nav__link">Portal</a>
             </li>
             <li class="nav__item">
-              <a href="about-us.html" class="nav__link">Sobre Nós</a>
+              <a href="history.html" class="nav__link">História</a>
             </li>
             <li class="nav__item">
               <a href="#contact-us" class="nav__link">Contatos</a>
@@ -103,7 +115,7 @@
     </header>
 
     <main class="main give">
-      <h2 class="give__title">Planos de Doações</h2>
+      <h2 class="main__title">Planos de Doações</h2>
       <section class="give__cards">
         <div class="give__cards-content">
           <div class="give__card-scale-content">
@@ -173,9 +185,9 @@
             </div>
           </div>
         </div>
-        <button class="give__button" type="button">
+        <button class="main__button" type="button">
           <a
-            class="give__link"
+            class="main__link"
             href="http://wa.me/message/S56JJMHKW7I2J1"
             target="_blank"
             rel="noopener noreferrer"
@@ -183,26 +195,28 @@
           >
         </button>
       </section>
-      <section class="give__text-content">
-        <p class="give__text">
+      <section class="main__text-content">
+        <p class="main__text give__text">
           Escolha seu plano ideal comece a treinar e faça parte da história dos
           jovens da nossa comunidade
         </p>
-        <p class="give__text">
+        <p class="main__text give__text">
           Mais do que um esporte, um meio de desenvolver princípios e caráter
           nesta nova geração
         </p>
       </section>
       <section class="give__aside">
-        <h2 class="give__title">Outras formas de ajudar</h2>
+        <h2 class="main__title">Outras formas de ajudar</h2>
         <div class="give__story">
-          <p class="give__text">
-            Todo valor arrecadado na loja é destinado ao projeto, venha se
-            equipar com a gente.
-            <button class="give__button" type="button">
-              <a href="story.html" class="give__link">Acesse aqui</a>
+          <div class="main__text-content-button">
+            <p class="main__text give__text">
+              Todo valor arrecadado na loja é destinado ao projeto, venha se
+              equipar com a gente.
+            </p>
+            <button class="main__button" type="button">
+              <a href="story.html" class="main__link">Acesse aqui</a>
             </button>
-          </p>
+          </div>
           <a href="story.html" class="caroussel give__carrossel">
             <div class="give__carrossel-contain">
               <img
@@ -221,17 +235,17 @@
           </a>
         </div>
 
-        <h3 class="give__sub-title">Confira nosso portal da transparência</h3>
-        <p class="give__text">
+        <h3 class="main__sub-title">Confira nosso portal da transparência</h3>
+        <p class="main__text give__text">
           Todas movimentações financeiras desde o início do projeto, confira:
         </p>
-        <p class="give__text cash cash-manual"></p>
-        <a href="portal.html" class="give__arrow-button">
-          <span class="give__content-arrow">
+        <p class="main__text give__text cash cash-manual"></p>
+        <a href="portal.html" class="main__arrow-button">
+          <span class="main__content-arrow">
             <img
               src="./imagens/icons/vector-white.svg"
               alt="arrow link"
-              class="give__arrow"
+              class="main__arrow"
             />
           </span>
           Saiba mais
@@ -372,18 +386,7 @@
       </div>
     </footer>
     <script src="./main.js"></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+
     <script type="text/javascript">
       $(document).ready(function () {
         $(".caroussel").slick({

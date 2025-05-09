@@ -7,21 +7,21 @@
   &--image {
     background-image: url(../imagens/bg-main.jpg);
     background-repeat: no-repeat;
-    background-size: 150%;
-    background-position-y: 20%;
+    background-size: 190%;
+    background-position-y: 250px;
     background-position-x: center;
     font-family: utils.$fonte-padrao;
 
     @include utils.on-tablet {
-      background-size: 70%;
-      background-position-x: 90%;
-      background-position-y: 15%;
+      background-size: 120%;
+      background-position-x: 50px;
+      background-position-y: 200px;
     }
 
     @include utils.on-small-desktop {
-      background-size: 50%;
-      background-position-x: 70%;
-      background-position-y: 25%;
+      background-size: 70%;
+      background-position-x: 380px;
+      background-position-y: 300px;
     }
   }
 }
