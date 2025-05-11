@@ -106,12 +106,29 @@ if (cashNegativeTotalElement) {
   cashNegativeTotalElement.textContent = cashSumNegativeFormatado;
 }
 
-const cashTotalManual = "R$-2680,39";
+const cashTotalManual = "R$363,61";
 
 cashTotalElements.forEach((element) => {
   element.textContent = cashTotalManual;
+  if (cashTotal >= 0) {
+    element.classList.add("cash--positive-result");
+    element.classList.remove("cash--negative-result");
+  }
+  if (cashTotal < 0) {
+    element.classList.add("cash--negative-result");
+    element.classList.remove("cash--positive-result");
+  }
 });
 
 cashTotalElementsAuto.forEach((element) => {
   element.textContent = cashTotalFormatado;
+  // Adiciona a classe de cor dependendo do valor de cashTotal
+  if (cashTotal >= 0) {
+    element.classList.add("cash--positive-result");
+    element.classList.remove("cash--negative-result");
+  }
+  if (cashTotal < 0) {
+    element.classList.add("cash--negative-result");
+    element.classList.remove("cash--positive-result");
+  }
 });

@@ -1,4 +1,7 @@
-.cash {
+.cash--positive-result {
+  color: rgb(1, 157, 1);
+}
+
+.cash--negative-result {
   color: red;
-  margin-block: 10px;
 }
