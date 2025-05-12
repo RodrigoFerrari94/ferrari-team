@@ -35,7 +35,7 @@
 .header {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding: 20px 40px 20px 40px;
@@ -73,12 +73,12 @@
 }
 
 .nav {
-  display: flex;
   padding: 5px;
   max-width: 180px;
 }
 @media (min-width: 672px) {
   .nav {
+    display: flex;
     width: 100%;
     align-items: end;
     justify-content: center;
@@ -136,7 +136,7 @@
 .nav__item {
   list-style: none;
   margin-left: 5px;
-  max-width: 50px;
+  max-width: 100px;
 }
 @media (min-width: 672px) {
   .nav__item {
@@ -865,6 +865,7 @@
 }
 .contact-us__label {
   margin: 0;
+  padding-bottom: 10px;
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -876,13 +877,12 @@
   text-transform: uppercase;
 }
 .contact-us__link {
-  margin-top: 8px;
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
-  height: 36px;
-  line-height: 150%;
+  height: 32px;
+  line-height: 70%;
   text-align: left;
   text-decoration: none;
   color: #fff;
@@ -895,7 +895,7 @@
 }
 .contact-us__social-link-content {
   display: flex;
-  padding-top: 16px;
+  padding-top: 6px;
   gap: 32px;
 }
 .contact-us__icon-social-hover {
@@ -905,7 +905,7 @@
   transition: transform 0.3s;
 }
 .contact-us__icon-social-hover:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 .contact-us__facebook:hover .contact-us__icon-social-hover {
   display: block;
@@ -1081,6 +1081,12 @@
   .give__carrossel {
     max-width: 250px;
   }
+}
+
+.volunteer__text {
+  width: 200px;
+  text-align: center;
+  margin: auto;
 }
 
 .cash--positive-result {

@@ -1,10 +1,10 @@
 @use "../utils" as utils;
 .nav {
-  display: flex;
   padding: 5px;
   max-width: 180px;
 
   @include utils.on-tablet {
+    display: flex;
     width: 100%;
     align-items: end;
     justify-content: center;
@@ -64,7 +64,7 @@
   &__item {
     list-style: none;
     margin-left: 5px;
-    max-width: 50px;
+    max-width: 100px;
 
     @include utils.on-tablet {
       max-width: 100%;

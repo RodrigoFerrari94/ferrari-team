@@ -33,19 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-/*const cashPositive = document.querySelectorAll(".cash--positive");
-const cashNegative = document.querySelectorAll(".cash--negative");
 
-
-
-let cashSumPositive = 0;
-let cashSumNegative = 0;
-const cashTotal = -2680.39;
-const cashToModific = document.querySelectorAll(".cash");
-
-cashToModific.forEach((element) => {
-  element.textContent = `R$${cashTotal}`;
-}); */
 const cashPositiveElements = document.querySelectorAll(".cash--positive");
 const cashNegativeElements = document.querySelectorAll(".cash--negative");
 const cashPositiveTotalElement = document.querySelector(
@@ -60,13 +48,12 @@ const cashTotalElementsAuto = document.querySelectorAll(".cash-auto");
 let cashSumPositive = 0;
 let cashSumNegative = 0;
 
-// Soma os valores positivos
 cashPositiveElements.forEach((element) => {
   const textoElemento = element.textContent.trim();
-  const match = textoElemento.match(/(\d+([.,]\d+)?)/); // Procura por um ou mais dígitos, seguidos opcionalmente por um separador decimal e mais dígitos
+  const match = textoElemento.match(/(\d+([.,]\d+)?)/);
 
   if (match && match[1]) {
-    const valorStr = match[1]; // O valor numérico capturado pelo grupo
+    const valorStr = match[1];
     const valorNum = parseFloat(valorStr.replace(",", "."));
     if (!isNaN(valorNum)) {
       cashSumPositive += valorNum;
@@ -76,18 +63,16 @@ cashPositiveElements.forEach((element) => {
 
 cashNegativeElements.forEach((element) => {
   const textoElemento = element.textContent.trim();
-  const match = textoElemento.match(/(\d+([.,]\d+)?)/); // Procura por um ou mais dígitos, seguidos opcionalmente por um separador decimal e mais dígitos
+  const match = textoElemento.match(/(\d+([.,]\d+)?)/);
 
   if (match && match[1]) {
-    const valorStr = match[1]; // O valor numérico capturado pelo grupo
+    const valorStr = match[1];
     const valorNum = parseFloat(valorStr.replace(",", "."));
     if (!isNaN(valorNum)) {
       cashSumNegative += valorNum;
     }
   }
 });
-
-// Formata os totais positivo e negativo
 const cashSumPositiveFormatado = `R$${cashSumPositive
   .toFixed(2)
   .replace(".", ",")}`;
@@ -110,25 +95,24 @@ const cashTotalManual = "R$363,61";
 
 cashTotalElements.forEach((element) => {
   element.textContent = cashTotalManual;
-  if (cashTotal >= 0) {
-    element.classList.add("cash--positive-result");
-    element.classList.remove("cash--negative-result");
-  }
-  if (cashTotal < 0) {
+  if (cashTotalManual.includes("-")) {
     element.classList.add("cash--negative-result");
     element.classList.remove("cash--positive-result");
+    return;
   }
+
+  element.classList.add("cash--positive-result");
+  element.classList.remove("cash--negative-result");
 });
 
 cashTotalElementsAuto.forEach((element) => {
   element.textContent = cashTotalFormatado;
-  // Adiciona a classe de cor dependendo do valor de cashTotal
-  if (cashTotal >= 0) {
-    element.classList.add("cash--positive-result");
-    element.classList.remove("cash--negative-result");
-  }
   if (cashTotal < 0) {
     element.classList.add("cash--negative-result");
     element.classList.remove("cash--positive-result");
+    return;
   }
+
+  element.classList.add("cash--positive-result");
+  element.classList.remove("cash--negative-result");
 });
