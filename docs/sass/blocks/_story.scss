@@ -1,0 +1,32 @@
+@use "../utils" as utils;
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  &__cards-content {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__text {
+    width: 320px;
+    text-align: center;
+  }
+
+  &__card {
+    & {
+      width: 160px;
+      height: 260px;
+    }
+
+    @include utils.hover(border, 3px solid utils.$cor1);
+  }
+}

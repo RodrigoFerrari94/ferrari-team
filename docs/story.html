@@ -37,7 +37,7 @@
               alt="logo"
               class="nav__icon-logo"
           /></a>
-          <div class="dropdown dropdown--active">
+          <div class="dropdown">
             <button class="dropdown__trigger">
               <img
                 src="./imagens/icons/icon-menu.svg"
@@ -107,11 +107,64 @@
         </div>
       </nav>
     </header>
-    <main class="main">
-      <h1 class="main__title">
-        Equipamentos Esportivos <br />
-        EM BREVE!!!
-      </h1>
+    <main class="main story">
+      <h1 class="main__title">Apoie o Projeto</h1>
+      <p class="main__text story__text">
+        Compre com a gente, todo valor é convertido em doação para o
+        desenvolvimento das oficinas
+      </p>
+
+      <section class="story__cards">
+        <div class="story__cards-content">
+          <div class="give-card story__card">
+            <h1 class="give-card__title">Atadura Pulser</h1>
+            <p class="give-card__price">
+              R$<span class="give-card__price--transform">45</span>,00
+            </p>
+            <div class="give-card__buy-story">
+              <p class="give-card__stock">Estoque: 1</p>
+              <img
+                class="give-card__image"
+                src="imagens/story/bandagem.webp"
+                alt="WhatsApp para comprar"
+              />
+              <button class="main__button give-card__button" type="button">
+                <a
+                  class="main__link"
+                  href="http://wa.me/message/S56JJMHKW7I2J1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Comprar</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="give-card story__card">
+            <h1 class="give-card__title">Luva Pulser</h1>
+            <p class="give-card__price">
+              R$<span class="give-card__price--transform">250</span>,00
+            </p>
+            <div class="give-card__buy-story">
+              <p class="give-card__stock">Estoque: 1</p>
+              <img
+                class="give-card__image"
+                src="../docs\imagens\story\luva.webp"
+                alt="WhatsApp para comprar"
+              />
+              <button class="main__button give-card__button" type="button">
+                <a
+                  class="main__link"
+                  href="http://wa.me/message/S56JJMHKW7I2J1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Comprar</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <a href="give.html" class="main__arrow-button">
         <span class="main__content-arrow">
           <img
@@ -257,35 +310,5 @@
       </div>
     </footer>
     <script src="./main.js"></script>
-    <script>
-      window.onload = buscarDadosPortalEmSegundoPlano;
-      atualizarElementosCash();
-    </script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".caroussel").slick({
-          dots: true,
-          infinite: true,
-          speed: 400,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-          autoplay: true,
-          autoplaySpeed: 3000,
-        });
-      });
-    </script>
   </body>
 </html>
