@@ -113,11 +113,29 @@
         Compre com a gente, todo valor é convertido em doação para o
         desenvolvimento das oficinas
       </p>
+      <div class="dropdown story__dropdown">
+        <button class="main__button dropdown__trigger story__dropdown-button">
+          Categorias
+        </button>
+        <div class="dropdown__content">
+          <ul class="dropdown__list story__list">
+            <li class="story__item story__selected-all">Todos</li>
+            <li class="story__item story__selected-gloves">Luvas</li>
+            <li class="story__item story__selected-shirts">Camisetas</li>
+            <li class="story__item story__selected-tank-tops">Regatas</li>
+            <li class="story__item story__selected-shorts">Calções</li>
+            <li class="story__item story__selected-others">Acessórios</li>
+          </ul>
+        </div>
+      </div>
 
       <section class="story__cards">
         <div class="story__cards-content">
-          <div class="give-card story__card">
+          <div
+            class="give-card story__card story__card--selected story__card--other"
+          >
             <h1 class="give-card__title">Atadura Pulser</h1>
+            <p class="story__card-description">3m</p>
             <p class="give-card__price">
               R$<span class="give-card__price--transform">45</span>,00
             </p>
@@ -139,8 +157,37 @@
               </button>
             </div>
           </div>
-          <div class="give-card story__card">
+          <div
+            class="give-card story__card story__card--selected story__card--other"
+          >
+            <h1 class="give-card__title">Atadura Pulser</h1>
+            <p class="story__card-description">3m</p>
+            <p class="give-card__price">
+              R$<span class="give-card__price--transform">45</span>,00
+            </p>
+            <div class="give-card__buy-story">
+              <p class="give-card__stock">Estoque: 2</p>
+              <img
+                class="give-card__image"
+                src="imagens/story/atadura-pulser-brasil.jpeg"
+                alt="WhatsApp para comprar"
+              />
+              <button class="main__button give-card__button" type="button">
+                <a
+                  class="main__link"
+                  href="http://wa.me/message/S56JJMHKW7I2J1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Comprar</a
+                >
+              </button>
+            </div>
+          </div>
+          <div
+            class="give-card story__card story__card--selected story__card--glove"
+          >
             <h1 class="give-card__title">Luva Pulser</h1>
+            <p class="story__card-description">12 oz</p>
             <p class="give-card__price">
               R$<span class="give-card__price--transform">250</span>,00
             </p>
@@ -162,10 +209,36 @@
               </button>
             </div>
           </div>
+          <div
+            class="give-card story__card story__card--selected story__card--glove"
+          >
+            <h1 class="give-card__title">Luva Pulser</h1>
+            <p class="story__card-description">12 oz</p>
+            <p class="give-card__price">
+              R$<span class="give-card__price--transform">250</span>,00
+            </p>
+            <div class="give-card__buy-story">
+              <p class="give-card__stock">Estoque: 1</p>
+              <img
+                class="give-card__image"
+                src="./imagens/story/luva-pulser-caveira.webp"
+                alt="WhatsApp para comprar"
+              />
+              <button class="main__button give-card__button" type="button">
+                <a
+                  class="main__link"
+                  href="http://wa.me/message/S56JJMHKW7I2J1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Comprar</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
-      <a href="give.html" class="main__arrow-button">
+      <a href="give.html" class="main__arrow-button story__arrow-button">
         <span class="main__content-arrow">
           <img
             src="./imagens/icons/vector-white.svg"

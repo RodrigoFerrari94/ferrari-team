@@ -4,19 +4,10 @@ const dropdowns = document.querySelectorAll(".dropdown");
 
 dropdowns.forEach((dropdown) => {
   const trigger = dropdown.querySelector(".dropdown__trigger");
-  const content = dropdown.querySelector(".dropdown__content");
-
-  if (content) {
-    content.style.display = "none";
-  }
 
   if (trigger) {
     trigger.addEventListener("click", (event) => {
       event.preventDefault();
-      if (content) {
-        content.style.display =
-          content.style.display === "none" ? "block" : "none";
-      }
       dropdown.classList.toggle("dropdown--active");
     });
   }
@@ -31,10 +22,6 @@ document.addEventListener("click", (event) => {
       !trigger.contains(event.target)
     ) {
       dropdown.classList.remove("dropdown--active");
-      const content = dropdown.querySelector(".dropdown__content");
-      if (content) {
-        content.style.display = "none";
-      }
     }
   });
 });
@@ -134,4 +121,55 @@ cashTotalElementsAuto.forEach((element) => {
 
   element.classList.add("cash--positive-result");
   element.classList.remove("cash--negative-result");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const categoryList = document.querySelector(".story__list");
+  const cardsContainer = document.querySelector(".story__cards-content");
+  const cards = Array.from(cardsContainer.children);
+
+  function filterCards(category) {
+    cards.forEach((card) => {
+      if (category === "all") {
+        card.classList.add("story__card--selected");
+      } else {
+        const isSelected = card.classList.contains(`story__card--${category}`);
+        if (isSelected) {
+          card.classList.add("story__card--selected");
+        } else {
+          card.classList.remove("story__card--selected");
+        }
+      }
+    });
+  }
+
+  categoryList.addEventListener("click", (event) => {
+    if (event.target.classList.contains("story__item")) {
+      let selectedCategory = "all";
+
+      switch (true) {
+        case event.target.classList.contains("story__selected-all"):
+          selectedCategory = "all";
+          break;
+        case event.target.classList.contains("story__selected-others"):
+          selectedCategory = "other";
+          break;
+        case event.target.classList.contains("story__selected-gloves"):
+          selectedCategory = "glove";
+          break;
+        case event.target.classList.contains("story__selected-shirts"):
+          selectedCategory = "shirt";
+          break;
+        case event.target.classList.contains("story__selected-shorts"):
+          selectedCategory = "short";
+          break;
+        case event.target.classList.contains("story__selected-tank-tops"):
+          selectedCategory = "tank-top";
+          break;
+      }
+      filterCards(selectedCategory);
+    }
+  });
+
+  filterCards("all");
 });

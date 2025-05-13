@@ -72,6 +72,42 @@
   }
 }
 
+.dropdown {
+  position: relative;
+}
+.dropdown__trigger {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+}
+.dropdown__content {
+  position: absolute;
+  padding: 10px 20px;
+  width: 85px;
+  background-color: #0d0b0d;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.dropdown--active .dropdown__content {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
 .nav {
   padding: 5px;
   max-width: 180px;
@@ -634,7 +670,6 @@
   font-size: 24px;
   text-transform: uppercase;
   margin-block: 0;
-  padding-bottom: 10px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.529);
 }
 .give-card__price {
@@ -644,6 +679,7 @@
   text-align: center;
   height: 50px;
   margin: auto;
+  margin-top: 6px;
   color: white;
   border: 1px solid white;
   font-size: 12px;
@@ -720,11 +756,8 @@
 }
 
 .story {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  width: 80%;
+  max-width: 1000px;
 }
 .story__cards-content {
   margin: auto;
@@ -733,21 +766,84 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .story__text {
-  width: 320px;
+  width: 80%;
+  max-width: 460px;
   text-align: center;
+  margin-inline: auto;
+  margin-block: 10px;
 }
 .story__card {
+  background-color: black;
   width: 160px;
   height: 260px;
+  display: none;
 }
 .story__card {
   transition: border 0.3s;
 }
 .story__card:hover {
   border: 3px solid #db9d28;
+}
+.story__card {
+  transition: transform 0.3s;
+}
+.story__card:hover {
+  transform: scale(1.1);
+}
+.story__card--selected {
+  display: block;
+}
+.story__card-description {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+.story__dropdown {
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+  z-index: 0;
+}
+.story__dropdown-button {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.story__dropdown-button {
+  transition: transform 0.3s;
+}
+.story__dropdown-button:hover {
+  transform: scale(1);
+}
+@media (min-width: 672px) {
+  .story__dropdown-button {
+    margin-left: 80px;
+  }
+}
+.story__list {
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+.story__item {
+  cursor: pointer;
+  color: white;
+  padding-block: 14px;
+}
+.story__item {
+  transition: color 0.3s;
+}
+.story__item:hover {
+  color: #8b2c13;
+}
+.story__arrow-button {
+  margin-top: 20px;
+  margin-left: 60px;
 }
 
 .portal {
@@ -866,47 +962,6 @@
 .aside__list {
   list-style-position: inside;
   list-style-type: "✔ ";
-}
-
-.dropdown {
-  height: 35px;
-  width: 35px;
-  position: relative;
-}
-@media (min-width: 672px) {
-  .dropdown {
-    display: none;
-  }
-}
-.dropdown__trigger {
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-}
-.dropdown__content {
-  position: absolute;
-  padding: 10px 20px;
-  width: 120px;
-  background-color: #0d0b0d;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-20px);
-  transition: opacity 0.2s, transform 0.2s;
-}
-.dropdown__list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.dropdown--active .dropdown__content {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .slick-list {

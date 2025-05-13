@@ -1,11 +1,7 @@
 @use "../utils" as utils;
 .story {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-
+  width: 80%;
+  max-width: 1000px;
   &__cards-content {
     margin: auto;
     width: 100%;
@@ -13,20 +9,77 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
 
   &__text {
-    width: 320px;
+    width: 80%;
+    max-width: 460px;
     text-align: center;
+    margin-inline: auto;
+    margin-block: 10px;
   }
 
   &__card {
     & {
+      background-color: black;
       width: 160px;
       height: 260px;
+      display: none;
     }
 
     @include utils.hover(border, 3px solid utils.$cor1);
+    @include utils.hover(transform, scale(1.1));
+  }
+
+  &__card--selected {
+    display: block;
+  }
+
+  &__card-description {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__dropdown {
+    width: 200px;
+    margin: 0;
+    padding: 10px;
+    z-index: 0;
+  }
+
+  &__dropdown-button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    @include utils.hover(transform, scale(1));
+
+    @include utils.on-tablet {
+      margin-left: 80px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+  }
+
+  &__item {
+    & {
+      cursor: pointer;
+      color: white;
+      padding-block: 14px;
+    }
+
+    @include utils.hover(color, utils.$cor3);
+  }
+
+  &__arrow-button {
+    margin-top: 20px;
+    margin-left: 60px;
   }
 }

@@ -1,12 +1,6 @@
 @use "../utils" as utils;
 .dropdown {
-  height: 35px;
-  width: 35px;
   position: relative;
-
-  @include utils.on-tablet {
-    display: none;
-  }
 
   &__trigger {
     cursor: pointer;
@@ -14,13 +8,14 @@
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    color: white;
   }
 
   &__content {
     position: absolute;
 
     padding: 10px 20px;
-    width: 120px;
+    width: 85px;
     background-color: utils.$cor4;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2),
       0 1px 2px rgba(255, 255, 255, 0.1);
@@ -44,5 +39,6 @@
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+    z-index: 1;
   }
 }
