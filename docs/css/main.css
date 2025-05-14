@@ -370,6 +370,7 @@
   text-align: center;
   color: white;
   width: 200px;
+  margin-left: 20px;
 }
 .main__content-arrow {
   margin-block: 4px;
@@ -844,6 +845,7 @@
 .story__arrow-button {
   margin-top: 20px;
   margin-left: 60px;
+  width: 350px;
 }
 
 .portal {
@@ -855,6 +857,11 @@
   background-color: #0e0000;
   text-align: center;
   border-radius: 25px;
+}
+.portal__button {
+  display: block;
+  margin-top: 20px;
+  margin-inline: auto;
 }
 
 .cash-flow {
@@ -889,7 +896,7 @@
 }
 .cash-flow__column {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 3px;
   text-align: left;
 }
 .cash-flow__column--head {

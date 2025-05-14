@@ -9,4 +9,10 @@
     text-align: center;
     border-radius: 25px;
   }
+
+  &__button {
+    display: block;
+    margin-top: 20px;
+    margin-inline: auto;
+  }
 }
