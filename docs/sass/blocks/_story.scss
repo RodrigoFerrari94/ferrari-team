@@ -1,15 +1,27 @@
 @use "../utils" as utils;
 .story {
-  width: 80%;
+  width: 100%;
+  box-sizing: border-box;
   max-width: 1000px;
   &__cards-content {
     margin: auto;
-    width: 100%;
+    width: 150%;
+    margin-left: -25%;
+    margin-top: -120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 5px;
+    transform: scale(0.7);
+
+    @include utils.on-tablet {
+      transform: scale(1);
+      gap: 30px;
+      margin-left: auto;
+      margin-top: auto;
+      width: 100%;
+    }
   }
 
   &__text {
@@ -26,6 +38,11 @@
       width: 160px;
       height: 260px;
       display: none;
+      transform: scale(0.7);
+
+      @include utils.on-tablet {
+        transform: scale(1);
+      }
     }
 
     @include utils.hover(border, 3px solid utils.$cor1);
@@ -80,7 +97,12 @@
 
   &__arrow-button {
     margin-top: 20px;
-    margin-left: 60px;
-    width: 350px;
+    width: 100%;
+    font-size: 16px;
+
+    @include utils.on-tablet {
+      font-size: 24px;
+      max-width: 360px;
+    }
   }
 }

@@ -757,17 +757,30 @@
 }
 
 .story {
-  width: 80%;
+  width: 100%;
+  box-sizing: border-box;
   max-width: 1000px;
 }
 .story__cards-content {
   margin: auto;
-  width: 100%;
+  width: 150%;
+  margin-left: -25%;
+  margin-top: -120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 5px;
+  transform: scale(0.7);
+}
+@media (min-width: 672px) {
+  .story__cards-content {
+    transform: scale(1);
+    gap: 30px;
+    margin-left: auto;
+    margin-top: auto;
+    width: 100%;
+  }
 }
 .story__text {
   width: 80%;
@@ -781,6 +794,12 @@
   width: 160px;
   height: 260px;
   display: none;
+  transform: scale(0.7);
+}
+@media (min-width: 672px) {
+  .story__card {
+    transform: scale(1);
+  }
 }
 .story__card {
   transition: border 0.3s;
@@ -844,8 +863,14 @@
 }
 .story__arrow-button {
   margin-top: 20px;
-  margin-left: 60px;
-  width: 350px;
+  width: 100%;
+  font-size: 16px;
+}
+@media (min-width: 672px) {
+  .story__arrow-button {
+    font-size: 24px;
+    max-width: 360px;
+  }
 }
 
 .portal {
