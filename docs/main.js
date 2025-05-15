@@ -157,14 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
         case event.target.classList.contains("story__selected-gloves"):
           selectedCategory = "glove";
           break;
-        case event.target.classList.contains("story__selected-shirts"):
-          selectedCategory = "shirt";
-          break;
-        case event.target.classList.contains("story__selected-shorts"):
-          selectedCategory = "short";
-          break;
-        case event.target.classList.contains("story__selected-tank-tops"):
-          selectedCategory = "tank-top";
+        case event.target.classList.contains("story__selected-clothes"):
+          selectedCategory = "clothe";
           break;
       }
       filterCards(selectedCategory);
