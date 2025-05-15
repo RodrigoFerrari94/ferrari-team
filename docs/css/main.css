@@ -131,13 +131,15 @@
   gap: 10px;
 }
 .nav__icon-logo {
-  width: 100px;
-  height: 107px;
+  width: 120px;
+  height: 128px;
   margin: 0;
   padding: 0;
 }
 @media (min-width: 672px) {
   .nav__icon-logo {
+    width: 100px;
+    height: 107px;
     padding-inline: 15px;
     margin-top: -55px;
     padding-bottom: 5px;
