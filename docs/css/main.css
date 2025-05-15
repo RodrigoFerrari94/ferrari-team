@@ -763,19 +763,15 @@
 }
 .story__cards-content {
   margin: auto;
-  width: 150%;
-  margin-left: -25%;
-  margin-top: -200px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  transform: scale(0.8);
 }
 @media (min-width: 672px) {
   .story__cards-content {
-    transform: scale(1);
     gap: 30px;
     margin-left: auto;
     margin-top: auto;
@@ -791,15 +787,9 @@
 }
 .story__card {
   background-color: black;
-  width: 160px;
-  height: 260px;
+  width: 145px;
+  height: 265px;
   display: none;
-  transform: scale(0.8);
-}
-@media (min-width: 672px) {
-  .story__card {
-    transform: scale(1);
-  }
 }
 .story__card {
   transition: border 0.3s;
