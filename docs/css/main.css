@@ -41,7 +41,7 @@
   padding: 30px 40px 30px 40px;
   padding-bottom: 10px;
   margin: auto;
-  background-image: linear-gradient(to right, #0d0b0d 3%, #007bae 50%, #0d0b0d 97%);
+  background-image: linear-gradient(to right, #0d0b0d 3%, #2478a2 50%, #0d0b0d 97%);
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.466);
 }
@@ -291,7 +291,7 @@
 }
 .main__strong {
   padding: 2px;
-  background-color: #eeab26;
+  background-color: #e8ac3e;
 }
 .main__img-content {
   margin-left: 0px;
@@ -350,7 +350,7 @@
   }
 }
 .main__button {
-  background-color: #007bae;
+  background-color: #2478a2;
   border: none;
   margin: auto;
   margin-top: 20px;
@@ -359,7 +359,7 @@
   transition: background-color 0.3s;
 }
 .main__button:hover {
-  background-color: #eeab26;
+  background-color: #e8ac3e;
 }
 .main__arrow-button {
   cursor: pointer;
@@ -384,7 +384,7 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #007bae;
+  background-color: #2478a2;
   transition: all 0.3s;
 }
 .main__arrow {
@@ -441,7 +441,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 3px #eeab26;
+  border: solid 3px #e8ac3e;
   margin: auto;
   width: 200px;
   border-radius: 50%;
@@ -472,7 +472,7 @@
   padding-left: 0;
 }
 .home__text-top {
-  border: solid 1px #eeab26;
+  border: solid 1px #e8ac3e;
   border-radius: 10px;
   box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.466);
   padding: 30px 20px;
@@ -510,7 +510,7 @@
 .home__carrossel {
   overflow: hidden;
   position: absolute;
-  top: 450px;
+  top: 480px;
   width: 100%;
 }
 @media (min-width: 672px) {
@@ -606,7 +606,7 @@
   transition: border 0.3s;
 }
 .give__card:hover {
-  border: 3px solid #eeab26;
+  border: 3px solid #e8ac3e;
 }
 .give__card {
   transition: transform 0.3s;
@@ -657,10 +657,10 @@
 .give-card {
   width: 200px;
   height: 220px;
-  background-color: #007bae;
+  background-color: #2478a2;
   border-radius: 20px;
   padding: 20px;
-  border: 3px solid #007bae;
+  border: 3px solid #2478a2;
 }
 @media (min-width: 672px) {
   .give-card {
@@ -803,7 +803,7 @@
   transition: border 0.3s;
 }
 .story__card:hover {
-  border: 3px solid #eeab26;
+  border: 3px solid #e8ac3e;
 }
 .story__card {
   transition: transform 0.3s;
@@ -967,7 +967,7 @@
 }
 .history__link {
   text-decoration: none;
-  background-color: #eeab26;
+  background-color: #e8ac3e;
   color: black;
   padding: 2px;
 }
@@ -989,7 +989,7 @@
   padding: 10px;
 }
 .aside__title {
-  background-color: #d54308;
+  background-color: #c6502a;
   color: white;
   font-weight: normal;
   font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -1132,7 +1132,7 @@
   overflow: hidden;
 }
 .send-us-a-message__input:focus {
-  border-bottom: 2px solid #eeab26;
+  border-bottom: 2px solid #e8ac3e;
 }
 .send-us-a-message__button {
   cursor: pointer;
@@ -1162,8 +1162,8 @@
 }
 .send-us-a-message__button {
   cursor: pointer;
-  background-color: #eeab26;
-  border: 1px solid #eeab26;
+  background-color: #e8ac3e;
+  border: 1px solid #e8ac3e;
   max-width: 342px;
 }
 
@@ -1211,7 +1211,7 @@
   transition: color 0.3s;
 }
 .contact-us__link:hover {
-  color: #d54308;
+  color: #c6502a;
 }
 .contact-us__social-link-content {
   display: flex;
