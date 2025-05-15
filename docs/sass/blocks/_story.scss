@@ -7,13 +7,13 @@
     margin: auto;
     width: 150%;
     margin-left: -25%;
-    margin-top: -250px;
+    margin-top: -200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    transform: scale(0.7);
+    transform: scale(0.8);
 
     @include utils.on-tablet {
       transform: scale(1);
@@ -38,7 +38,7 @@
       width: 160px;
       height: 260px;
       display: none;
-      transform: scale(0.7);
+      transform: scale(0.8);
 
       @include utils.on-tablet {
         transform: scale(1);
