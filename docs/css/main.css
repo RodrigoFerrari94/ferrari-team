@@ -37,8 +37,9 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 20px 40px 20px 40px;
+  gap: 5px;
+  padding: 30px 40px 30px 40px;
+  padding-bottom: 10px;
   margin: auto;
   background-image: linear-gradient(to right, #0d0b0d 3%, #db9d28 50%, #0d0b0d 97%);
   border-radius: 0px 0px 20px 20px;
@@ -67,6 +68,7 @@
 }
 @media (min-width: 672px) {
   .header__title {
+    padding-left: 100px;
     max-width: 100%;
     font-size: 3em;
   }
@@ -109,7 +111,7 @@
 }
 
 .nav {
-  padding: 5px;
+  padding-inline: 5px;
   max-width: 180px;
 }
 @media (min-width: 672px) {
@@ -129,16 +131,16 @@
   gap: 10px;
 }
 .nav__icon-logo {
-  width: 60px;
-  height: 55px;
+  width: 100px;
+  height: 107px;
   margin: 0;
   padding: 0;
 }
 @media (min-width: 672px) {
   .nav__icon-logo {
-    width: 60px;
-    height: 55px;
     padding-inline: 15px;
+    margin-top: -55px;
+    padding-bottom: 5px;
   }
 }
 .nav__icon-dropdown {
@@ -506,7 +508,7 @@
 .home__carrossel {
   overflow: hidden;
   position: absolute;
-  top: 430px;
+  top: 450px;
   width: 100%;
 }
 @media (min-width: 672px) {
@@ -768,18 +770,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+  row-gap: 30px;
 }
 @media (min-width: 672px) {
   .story__cards-content {
     gap: 30px;
-    margin-left: auto;
-    margin-top: auto;
     width: 100%;
   }
 }
 .story__text {
-  width: 80%;
+  width: 90%;
   max-width: 460px;
   text-align: center;
   margin-inline: auto;
@@ -787,9 +788,14 @@
 }
 .story__card {
   background-color: black;
-  width: 145px;
+  width: 110px;
   height: 265px;
   display: none;
+}
+@media (min-width: 672px) {
+  .story__card {
+    width: 155px;
+  }
 }
 .story__card {
   transition: border 0.3s;
@@ -802,6 +808,14 @@
 }
 .story__card:hover {
   transform: scale(1.1);
+}
+.story__card-title {
+  font-size: 20px;
+}
+@media (min-width: 672px) {
+  .story__card-title {
+    font-size: 24px;
+  }
 }
 .story__card--selected {
   display: block;

@@ -167,3 +167,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterCards("all");
 });
+
+function calculateStock() {
+  const cards = document.querySelectorAll(".give-card");
+  const totalStock = document.querySelector(".story__stock");
+
+  if (totalStock) {
+    const result = Array.from(cards).reduce((acumulador, card) => {
+      const elementPrice = card.querySelector(".give-card__price .calc--sum");
+      const elementStock = card.querySelector(
+        ".give-card__stock .calc--multiply"
+      );
+
+      if (elementPrice && elementStock) {
+        const priceText = elementPrice.textContent;
+        const stockText = elementStock.textContent;
+
+        const price = parseFloat(priceText);
+        const stock = parseInt(stockText);
+
+        if (!isNaN(price) && !isNaN(stock)) {
+          return acumulador + price * stock;
+        }
+      }
+      return acumulador;
+    }, 0);
+
+    totalStock.textContent = `Valor em estoque: R$${result.toFixed(2)}`;
+  }
+}
+
+window.onload = calculateStock;

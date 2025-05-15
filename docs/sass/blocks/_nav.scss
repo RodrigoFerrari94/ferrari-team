@@ -1,6 +1,6 @@
 @use "../utils" as utils;
 .nav {
-  padding: 5px;
+  padding-inline: 5px;
   max-width: 180px;
 
   @include utils.on-tablet {
@@ -20,15 +20,16 @@
   }
 
   &__icon-logo {
-    width: 60px;
-    height: 55px;
+    width: 100px;
+    height: 107px;
     margin: 0;
+
     padding: 0;
 
     @include utils.on-tablet {
-      width: 60px;
-      height: 55px;
       padding-inline: 15px;
+      margin-top: -55px;
+      padding-bottom: 5px;
     }
   }
 
