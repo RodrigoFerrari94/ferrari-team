@@ -41,7 +41,7 @@
   padding: 30px 40px 30px 40px;
   padding-bottom: 10px;
   margin: auto;
-  background-image: linear-gradient(to right, #0d0b0d 3%, #db9d28 50%, #0d0b0d 97%);
+  background-image: linear-gradient(to right, #0d0b0d 3%, #007bae 50%, #0d0b0d 97%);
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.466);
 }
@@ -202,10 +202,10 @@
   width: 100%;
   height: 3px;
   border-radius: 4px;
-  background-color: #8b2c13;
+  background-color: #c4151e;
 }
 .nav__link:hover {
-  color: #8b2c13;
+  color: #c4151e;
 }
 
 .main {
@@ -289,7 +289,7 @@
 }
 .main__strong {
   padding: 2px;
-  background-color: #db9d28;
+  background-color: #eeab26;
 }
 .main__img-content {
   margin-left: 0px;
@@ -327,8 +327,8 @@
   height: 56px;
   border-radius: 8px;
   border: none;
-  border: 1px solid #8b2c13;
-  background-color: #8b2c13;
+  border: 1px solid #c4151e;
+  background-color: #c4151e;
   color: #f2f4f5;
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 15px;
@@ -348,7 +348,7 @@
   }
 }
 .main__button {
-  background-color: rgb(1, 75, 174);
+  background-color: #007bae;
   border: none;
   margin: auto;
   margin-top: 20px;
@@ -357,7 +357,7 @@
   transition: background-color 0.3s;
 }
 .main__button:hover {
-  background-color: #db9d28;
+  background-color: #eeab26;
 }
 .main__arrow-button {
   cursor: pointer;
@@ -382,7 +382,7 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: rgb(1, 75, 174);
+  background-color: #007bae;
   transition: all 0.3s;
 }
 .main__arrow {
@@ -439,7 +439,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 3px #db9d28;
+  border: solid 3px #eeab26;
   margin: auto;
   width: 200px;
   border-radius: 50%;
@@ -470,7 +470,7 @@
   padding-left: 0;
 }
 .home__text-top {
-  border: solid 1px #db9d28;
+  border: solid 1px #eeab26;
   border-radius: 10px;
   box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.466);
   padding: 30px 20px;
@@ -604,7 +604,7 @@
   transition: border 0.3s;
 }
 .give__card:hover {
-  border: 3px solid #db9d28;
+  border: 3px solid #eeab26;
 }
 .give__card {
   transition: transform 0.3s;
@@ -655,10 +655,10 @@
 .give-card {
   width: 200px;
   height: 220px;
-  background-color: rgb(1, 75, 174);
+  background-color: #007bae;
   border-radius: 20px;
   padding: 20px;
-  border: 3px solid rgb(1, 75, 174);
+  border: 3px solid #007bae;
 }
 @media (min-width: 672px) {
   .give-card {
@@ -801,7 +801,7 @@
   transition: border 0.3s;
 }
 .story__card:hover {
-  border: 3px solid #db9d28;
+  border: 3px solid #eeab26;
 }
 .story__card {
   transition: transform 0.3s;
@@ -863,7 +863,7 @@
   transition: color 0.3s;
 }
 .story__item:hover {
-  color: #8b2c13;
+  color: #c4151e;
 }
 .story__arrow-button {
   margin-top: 20px;
@@ -942,14 +942,14 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
 }
 .history__title {
-  color: #8b2c13;
+  color: #c4151e;
   font-family: "boxe", cursive;
   font-size: 1.5em;
   font-weight: normal;
   text-align: center;
 }
 .history__sub-title {
-  color: #8b2c13;
+  color: #c4151e;
   font-family: "Bebas Neue", "cursive";
   font-size: 1.6em;
   text-indent: 4px;
@@ -965,7 +965,7 @@
 }
 .history__link {
   text-decoration: none;
-  background-color: #db9d28;
+  background-color: #eeab26;
   color: black;
   padding: 2px;
 }
@@ -987,7 +987,7 @@
   padding: 10px;
 }
 .aside__title {
-  background-color: #a54c13;
+  background-color: #d54308;
   color: white;
   font-weight: normal;
   font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -1130,7 +1130,7 @@
   overflow: hidden;
 }
 .send-us-a-message__input:focus {
-  border-bottom: 2px solid #db9d28;
+  border-bottom: 2px solid #eeab26;
 }
 .send-us-a-message__button {
   cursor: pointer;
@@ -1138,8 +1138,8 @@
   height: 56px;
   border-radius: 8px;
   border: none;
-  border: 1px solid #8b2c13;
-  background-color: #8b2c13;
+  border: 1px solid #c4151e;
+  background-color: #c4151e;
   color: #f2f4f5;
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 15px;
@@ -1160,8 +1160,8 @@
 }
 .send-us-a-message__button {
   cursor: pointer;
-  background-color: #db9d28;
-  border: 1px solid #db9d28;
+  background-color: #eeab26;
+  border: 1px solid #eeab26;
   max-width: 342px;
 }
 
@@ -1209,7 +1209,7 @@
   transition: color 0.3s;
 }
 .contact-us__link:hover {
-  color: #a54c13;
+  color: #d54308;
 }
 .contact-us__social-link-content {
   display: flex;

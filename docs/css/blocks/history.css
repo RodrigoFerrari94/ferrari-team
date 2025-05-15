@@ -10,14 +10,14 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
 }
 .history__title {
-  color: #8b2c13;
+  color: #c4151e;
   font-family: "boxe", cursive;
   font-size: 1.5em;
   font-weight: normal;
   text-align: center;
 }
 .history__sub-title {
-  color: #8b2c13;
+  color: #c4151e;
   font-family: "Bebas Neue", "cursive";
   font-size: 1.6em;
   text-indent: 4px;
@@ -33,7 +33,7 @@
 }
 .history__link {
   text-decoration: none;
-  background-color: #db9d28;
+  background-color: #eeab26;
   color: black;
   padding: 2px;
 }
